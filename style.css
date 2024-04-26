@@ -1,5 +1,11 @@
 /*comentario aqui para substtituir o css que vira*/
-#link{
+body{
+    background-color: bisque;
+     font-family: monospace;
+}
+
+
+.link{
     background-color: rgba(127, 104, 148, 0.664);
      padding: 5px;
     border-radius: 10px;
@@ -7,6 +13,21 @@
     color: aliceblue;
     
 }
-#link:hover{
+.link:hover{
     background-color: rgba(93, 35, 148, 0.664);
+}
+.rodape{
+margin: auto;
+margin-top: 30%;
+  
+
+}
+#conteiner{
+ text-align: center;   
+ 
+}
+.fixado{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
 }

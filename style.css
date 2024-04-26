@@ -32,3 +32,8 @@ margin-top: 30%;
     bottom: 25px;
     right: 25px;
 }
+.imagensEx{
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+}

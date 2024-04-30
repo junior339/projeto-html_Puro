@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux e servidores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="conteiner">Linux e servidores</h1>
+    <ul>sistemas de arquivo
+        <li>dispositivo sata </li>
+        <li>primeiro drive scsi /dev/sda </li>
+        <li>segundo drive scsi /dev/sdb </li>
+        <li>terceiro drive scsi /dev/sdc </li>
+        <li>quarto drive scsi /dev/sdd </li>
+    </ul>~
+    <p>se seu dispositivo dor ide ele e reconhecido como hds e sata sda</p>
+    <p>os sda ou hda podem ser particionados em 4 partes</p>
+    <ul>
+        <h3>sata</h3>
+        <li>sda 1</li>
+        <li>sda 2</li>
+        <li>sda 3</li>
+        <li>sda 4</li>
+        <h3>no caso da ide</h3>
+        <li>hda 1</li>
+        <li>hda 2</li>
+        <li>hda 3</li>
+        <li>hda 4</li>
+    </ul>
+    <h2>pontos de montagem diretorios </h2>
+    <h3>tudo começa n diretoria (/) ou diretorio raiz </h3>
+    <p>a principal diferença do windows e que tudo fica n c:/ no linux voce poder colocar tudo em partições diferentes</p>
+    <ul>para o exemplos citados aqui serão feitos no debian.
+        <li>se voce usa windows use o soft Virtualbox e baixe a iso do OS</li>
+        <li><a href="https://www.debian.org/distrib/">Debian</a></li>
+        <li><a href="https://www.virtualbox.org/">Virtualbox</a></li>
+        <li>crie partiçoes manuais</li>
+        <li>/boot</li>
+        <li>/</li>
+        <li>/home</li>
+        <li>/usr   obs area de troca swap</li>
+    </ul>
+
+    <h1>comandos em linux</h1>
+    <ul>
+        <li>entenda que o linux e case sensitive difernças entre maiusculo e minusculo</li>
+        <li>usuario root e representado pelo #</li>
+        <li>root@debian:# su nomeUSuario</li>
+        <li>nomeUsuario@debian:/$ o $ siguinifica que ele e um usuario comum</li>
+        <h2>comandos</h2>
+        <li><strong>ls</strong> lista o conteudo por diretorio </li>
+        <li><strong>ls -l</strong> lista os arquivos por linha</li>
+        <li><strong>ls -r</strong> inverte a ordem se seleção</li>
+        <li><strong>ls -a</strong> lista os arquivos ocultos</li>
+        <li><strong>ls|more</strong> lista pausadamente os arquivos</li>
+        <li>ls*.extensão_do_arquivo  lista somente de uma extensão</li>
+        <li>cd abrir pasta</li>
+        <li>cd .. voltar</li>
+        <li>cd / </li>
+        <li>clear</li>
+
+        <li>pwd mostra o caminho completo do seu diretorio</li>
+        <li>mkdir nome_da_pasta   cria uma pasta</li>
+        <li>rmdir nome_da_pasta apaga uma pasta vazia</li>
+        <li>cat nome_do_arquivo visualiza o conteudo em modo texto</li>
+        <li>tab para auto complet</li>
+
+    </ul>
+
+
+</body>
+</html>

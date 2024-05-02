@@ -38,3 +38,12 @@ margin-top: 30%;
     border-radius: 25px;
     width: 90%;
 }
+
+/*para a tabela do html*/
+td{
+    border: 1px solid black;
+    padding: 2px;
+}
+table{
+    border: 1px solid rgb(19, 22, 153);
+}

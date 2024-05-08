@@ -17,6 +17,19 @@ body{
 .link:hover{
     background-color: rgba(93, 35, 148, 0.664);
 }
+
+
+.link1{
+    background-color: rgba(255, 255, 255, 0.664);
+     padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    
+}
+.link1:hover{
+    background-color: rgba(31, 21, 167, 0.664);
+}
 .rodape{
 margin: auto;
 margin-top: 30%;
@@ -40,10 +53,3 @@ margin-top: 30%;
 }
 
 /*para a tabela do html*/
-td{
-    border: 1px solid black;
-    padding: 2px;
-}
-table{
-    border: 1px solid rgb(19, 22, 153);
-}

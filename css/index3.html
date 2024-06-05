@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elementos flutuantes</title>
+    <style>
+        body{
+            background-color: rgb(66, 66, 74);
+        }
+         .conteudo{
+            background: rgb(48, 48, 106);
+            border:1px solid black;
+            width: 150px;
+            margin-left: 5px;
+            height: 150px;
+            float: right;
+            border-radius: 15px;
+         }
+         .principal{
+            background-color: rgb(112, 41, 97);
+            padding: 30px;
+            border-radius: 15px;
+         }
+       .clear{
+        clear: both;
+     
+       }
+    </style>
+</head>
+<body> 
+         <div class="principal">
+                <div class="conteudo">
+                    conteudo 1
+                </div>
+                <div class="conteudo">
+                    conteudo 2
+                </div>
+                <div class="conteudo">
+                    conteudo 3
+                </div>
+                <div class="clear"></div>
+          </div>  
+    
+    
+    <div >
+        <p >o float faz com que saia do fluxo padrão</p>
+        <p>mas o texto fica flutuando em volta e para isso no prximo elemento eu uso um clear como no exemplo abaixo</p>
+        <p class="clear">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione harum labore sed distinctio saepe, molestias omnis perspiciatis iure. Distinctio cumque, perferendis officia voluptatem vel et tempore consequatur quisquam delectus quaerat.</p>
+    </div>
+    <p>se voce quiser criar uma div pai para elementos flutuantes use uma div clear apos os elementos</p>
+    <img src="imagens/code.png" alt="">
+    <p> se voce notar eu criei uma div para limpar o meu float no exemplo acima</p>
+</body>
+</html>

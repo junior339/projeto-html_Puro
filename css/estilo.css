@@ -1,0 +1,70 @@
+body{
+    background-color: rgb(62, 62, 79);
+    font-family: monospace;
+    color: aquamarine;
+}
+h1 ,h3{
+    color: rgb(61, 23, 23);
+    text-align: center;
+}
+#idtestegenerico{
+    color: blueviolet;
+    margin: 5px;
+}
+.classgenerica{
+    background-color: black;
+}
+.classgenerica2{
+color: black;
+}
+
+#topo{
+    background-color: black;
+}
+
+#conteudo{
+    background-color: rgb(24, 22, 30);
+}
+
+.produto{
+    background-color: grey;
+    margin: 10px;
+}
+#rodape{
+    background-color: rgb(92, 80, 80);
+}
+#assinatura{
+    background-color: blueviolet;
+}
+.azul{
+    background-color: rgb(41, 41, 223);
+}
+#conteudo-bordas{
+    border: 5px dotted rgb(44, 40, 40);
+}
+#conteudo-bordas-solid{
+    border: 5px solid rgb(44, 40, 40);
+}
+#conteudo-bordas-groove{
+    border: 4px groove rgb(44, 40, 40);
+}
+#conteudo-bordas-dashed{
+    border: 5px dashed rgb(44, 40, 40);
+}
+.formatacao-p{
+    color: aquamarine;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', Courier, monospace;
+}
+.texto-porcento{
+    font-size: 150%;
+}
+.texto-em{
+    font-size: 1.5em;
+}
+.texto-rem{
+    font-size: 1.5rem;
+}
+.texto-porcento{
+    font-size: 150%;
+}

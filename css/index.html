@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Manual de css</title>
+</head>
+<body >
+    <ul>
+        <h1>estilos em css</h1>
+        <li>temos o estilo inline , dentro da tag colocamos style=" color:red;" por exemplo</li>
+        <li>temos o estilo interno </li>
+        <li>no head vc coloca style como uma tag</li>
+        <li>dentro voce coloca um seletor uma id ou uma class</li>
+        <h3>seletores</h3>
+        <li>body p h1 etc</li>
+        <li>valos colocar chave e valor</li>
+        <li>body{</li>
+           color:red; <br>background:blue; <br>
+        }
+        <li>o exemplo acima daria estilo para toda  meu documento</li>
+
+    </ul>
+
+    <h1>como utilizar classes e IDs</h1>
+    <ul>
+        <li>uma classe e mais genérica e um id e mais especifico exemplo de um id na vida real e um lugar no cinema com numero seu cpf ou numero de telefone e uma coisa especifica e uma classe e genérica por exemplo em um grupo de pessoas se vc chamasse as pessoas pelo cpf isso seria especifico e apenas uma pessoa viria porem se voce chamasse todas as mulheres isso seria um exemplo de classe pois haveria mais pessoas que se enquadram nesse requisito </li>
+        <li>no contexto de um html usamos o id para formatações especificas e gerais e classes para formatações genéricas</li>
+    </ul>
+    <h3>exemplos abaixo de class e id abaixo</h3>
+    <div id="idtestegenerico">
+        <ul>
+            <li class="classgenerica">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ut iure sequi quas, laudantium, totam odit aliquam illo voluptate repellat impedit officia. Quae tenetur modi quaerat qui eligendi odio ad.</li>
+            <li class="classgenerica2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ut iure sequi quas, laudantium, totam odit aliquam illo voluptate repellat impedit officia. Quae tenetur modi quaerat qui eligendi odio ad.</li>
+            <li class="classgenerica">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ut iure sequi quas, laudantium, totam odit aliquam illo voluptate repellat impedit officia. Quae tenetur modi quaerat qui eligendi odio ad.</li>
+        </ul>
+    </div>
+    <!--                                                -->
+    <h1>tags div e span</h1>
+    <ul>servem para fazer as divisões do site.</ul>
+
+    <!------------------------------------------------topo-->
+                <div id="topo">
+                    <img src="https://tm.ibxk.com.br/2023/04/10/10144753811209.jpg" width="200">
+                    
+                    <ul>
+                        <li>Home</li>
+                        <li>Produtos</li>
+                        <li>Contato</li>
+
+                    </ul>
+                </div>
+    <!------------------------------------------------------->    
+    <div id="conteudo">
+          <div class="produto">
+              Produto 1
+          </div>
+          <div class="produto">
+              Produto 2
+          </div>
+          <div class="produto">
+              Produto 3
+          </div>
+   </div>
+   <!---------------------------------->  
+   <div id="rodape">
+       <div>
+        Todos os <span class="azul">Direitos</span>  reservados  
+       </div>
+   </div> 
+   <span id="assinatura">
+      junior
+   </span>     
+<p>
+    a div é um elemento do tipo block o span é do tipo inline.
+</p>
+<p>o span e bom para interpolar textos como no exemplo acima com a palavra direitos e o junior e um exemplo de span ja produto 1 e um exemplo de elemento de uma linha inteira ou tipo block    
+</p>
+
+
+<h1>bordas</h1>
+<div id="conteudo-bordas-solid">
+    bordas <br>
+    bordas <br>
+    bordas <br>
+
+</div>
+<div id="conteudo-bordas-groove">
+    bordas <br>
+    bordas <br>
+    bordas <br>
+
+</div>
+<div id="conteudo-bordas-dashed">
+    bordas <br>
+    bordas <br>
+    bordas <br>
+
+</div>
+<div id="conteudo-bordas">
+    bordas <br>
+    bordas <br>
+    bordas <br>
+
+</div>
+<!-------------fontes e cores-->
+<div>
+    <h1 class="formatacao-p">fontes e cores</h1>
+    <p class="formatacao-p">conteúdo de cores html colors codes se voce usas o vscode ele possui o recurso de cores personalizadas.</p>
+</div>
+<!--tamanho textos------------------------------------------>
+<h1>textos tamanhos</h1>
+<p class="texto-porcento">conteudo em %</p>
+<p class="texto-px">conteudo </p>
+<p class="texto">conteudo </p>
+<div>
+    <p class="texto-em">(em) conteudo relativo ao seu conteiner pai por um exemplo se eu tiver o conteudo dentro de uma div e definir essa div tem um fontsize de 30px e colocar um paragrafo com tamanho de  2em ,eu terei um paragrafo de 60px se ele nao tiver uma div pai ele vai procurar no body que e por padrao 16px </p>
+    <p class="texto-rem">(rem) conteudo relativo ao 16px que e a medida raiz</p>
+</div>
+<div>
+    <a href="index2.html">Parte 2</a>
+</div>
+</body>
+</html>

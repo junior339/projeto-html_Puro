@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecblog</title>
+    <style>
+        /*limpar as formatações padroes*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-size: 1em;
+            font-family:'Trebuchet MS', Helvetica, sans-serif ;
+            background-color: beige;
+           
+            
+        }
+        #header{
+            background-color: rgb(250, 200, 0);
+            text-align: center;
+            padding: 15px;
+        }
+        .white{
+            color: white;
+        }
+        .logo{
+            font-size: 1.5em;
+        }
+        .logo,.menu{
+            padding:15px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: rgb(250, 200, 0) ;
+            background-color: aliceblue;
+        }
+        .menu,a{
+            color: aliceblue;
+            padding: 5px;
+        }
+
+        #area-principal{
+           
+            width: 920px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+      
+     
+
+       #area-postagens{
+            width: 660px;
+            float: left;
+            background-color: beige;
+            padding: 5px;
+           
+         
+       }
+       #area-lateral{
+        background-color: beige;
+            width: 240px;
+            float: right;
+            padding: 5px;
+       }
+       #rodape{
+         background: #ccc;
+         clear: both;
+         text-align: center;
+         padding: 15px;
+
+       }
+       .postagem{
+        padding: 20px;
+        margin-bottom: 20px;
+        background: white;
+       }
+    h2{
+      color: #f7b607;
+    }
+    .data-postagem{
+        font-size: 0.8em;
+        border-bottom: 1px solid #f4f4f4;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        display: block;
+    }
+    #area-principal a{
+        color: rgba(0, 0, 0, 0.545);
+        padding: 0;
+    }
+    .conteudo-lateral{
+        background: white;
+        padding: 10px;
+        margin-bottom: 20px;
+        
+
+    }
+    
+    .postagem-lateral{}
+    h3{
+        background: #ccc;
+        color: #656565;
+        padding: 5px;
+    }
+   
+    
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="logo">
+            <h1>Tec<span class="white">Blog</span></h1>
+
+        </div>
+        <div class="menu">
+            <a href="">Home</a>
+            <a href="">Jogos</a>
+            <a href="">Celulares</a>
+            <a href="">Informatica</a>
+            <a href="">Eletronica</a>
+          
+        </div>
+    </div>
+ 
+    <div id="area-principal">
+         <div id="area-postagens">
+            <!--abertura postagem-->
+                <div class="postagem">
+                    <h2>Titulo da postagem</h2>
+                    <span class="data-postagem">postado 20 março de 2024</span>
+                    <img width="620px" src="imagens/imagem1.jpg" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, molestiae assumenda corporis laboriosam sapiente tempore error expedita ipsum! Ad rem deleniti ipsam fuga cum placeat impedit, porro suscipit. Eveniet, nam.</p>
+                    <a href="">Leia mais.</a>
+
+                </div>
+                <!--fechamento postagem-->
+            <!--abertura postagem-->
+                <div class="postagem">
+                    <h2>Titulo da postagem</h2>
+                    <span class="data-postagem">postado 20 março de 2024</span>
+                    <img width="620px" src="imagens/imagem2.jpg" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, molestiae assumenda corporis laboriosam sapiente tempore error expedita ipsum! Ad rem deleniti ipsam fuga cum placeat impedit, porro suscipit. Eveniet, nam.</p>
+                    <a href="">Leia mais.</a>
+
+                </div>
+                <!--fechamento postagem-->
+         </div>
+         <div id="area-lateral">
+              <div class="conteudo-lateral">
+                <h3>Postagens recentes</h3>
+                <div class="postagem-lateral">
+                   <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. .</p>
+                   <a href="">Leia mais</a>
+                   <hr>
+                   
+                   
+
+                   
+
+                </div>
+                <div class="postagem-lateral">
+                   <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. .</p>
+                   <a href="">Leia mais</a>
+                   <hr>
+
+                   
+
+                   
+
+                </div>
+
+              </div>
+         </div>
+         <div id="rodape">
+            Todos os direitos reservados
+         </div>
+    </div>
+
+
+  
+       
+  
+    
+</body>
+</html>

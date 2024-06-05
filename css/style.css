@@ -1,0 +1,52 @@
+body{
+    background-image: url(imagens/fundo.png);
+    font-family: sans-serif;
+}
+#conteiner-principal{
+    width: 900px;
+    margin: auto;
+}
+#logo{
+   background-image: url(imagens/capa.png);
+   background-repeat: no-repeat;
+   height: 400px;
+   border-radius: 20px;
+   margin-bottom: -10px;
+}
+#menu{
+    margin-top: 0;
+    background-color: grey;
+    padding: 15px;
+}
+#menu a{
+   text-decoration: none;
+   padding-left: 5px;
+   color: rgb(57, 57, 57) ;
+   font-weight: 700;
+
+}
+#home-conteiner{
+    background-color: aliceblue;
+    padding: 5px;
+}
+#fotter{
+    font-weight: 700;
+    text-align: center;
+}
+h1{
+    color: gray;
+}
+p{
+    font-weight: 540;
+}
+.conteudo-img{
+    margin: 5px;
+}
+.img{
+    border: solid gray 8px;
+    border-radius: 5px;
+    
+}
+.center{
+    margin: auto;
+}

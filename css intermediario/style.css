@@ -1,0 +1,23 @@
+/*{
+    border: 1px solid black;
+}
+h1,h2,h3{
+    color:green
+}*/
+
+p.verde{
+    color:green;
+}
+li>a{
+    color:rgb(226, 95, 43);
+    text-decoration: none;
+}
+li a{
+   background-color: aqua;
+}
+h1+p{
+    background-color: brown;
+}
+h2~p{
+    color: rgb(64, 255, 0);
+}

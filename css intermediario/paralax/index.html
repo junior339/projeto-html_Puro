@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paralax efeito</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body, html{
+           margin: 0;
+           font:16px "lato",sans-serif ;
+           color: #777;
+           height: 100%;
+        } 
+        .conteudo{
+            color: #777;
+            background-color: white;
+            text-align: justify;
+            padding: 50px 80px;
+        }
+        h3{
+            text-transform: uppercase;
+            color: #111;
+            text-align: center;
+        }
+        p{
+            margin-bottom: 20px;
+        }
+        /*efeito paralax*/
+        .caixa1,.caixa2, .caixa3, .caixa4{
+             position: relative;
+            height: 100%;
+            background-attachment: fixed;
+           
+        }
+        .caixa1{
+            background:url(imagens/imagem1.jpg)  ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+          
+        }
+        .caixa2{
+            background:url(imagens/imagem2.jpg) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+       
+        .caixa3{
+            background:url(imagens/imagem3.jpg) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .caixa4{
+            background:url(imagens/imagem4.jpg) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+      .conteudo-titulo{
+       text-align: center;
+       height: 100%;
+       line-height: 600px;
+      
+      } 
+      span{
+        background-color: #111;
+        padding:10px 25px;
+        text-transform: uppercase;
+        color: white;
+      }
+       
+
+    </style>
+
+</head>
+<body>
+    <div class="caixa1">
+        <div class="conteudo-titulo">
+            <div>
+               <span>passeio de balões</span>
+            </div>
+
+        </div>
+    </div>
+    <div class="conteudo">
+        <h3>Parallax</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam earum fugiat voluptate ratione corrupti veniam laborum,</p>
+    </div>
+    <div class="caixa2">
+        <div class="conteudo-titulo">
+            <div>
+               <span>pegando a estrada</span>
+            </div>
+
+        </div>
+    </div>
+    <div class="conteudo">
+        <h3>Parallax</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam earum fugiat voluptate ratione corrupti veniam laborum,</p>
+    </div>
+    <div class="caixa3">
+        conteudo 3
+    </div>
+    <div class="conteudo">
+        <h3>Parallax</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam earum fugiat voluptate ratione corrupti veniam laborum,</p>
+    </div>
+    
+    <div class="caixa4">
+        conteudo 4
+    </div>
+    
+</body>
+</html>

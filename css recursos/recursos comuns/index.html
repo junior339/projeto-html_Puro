@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recursos css</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        h1,h2,h3{
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            background-color:  rgb(42, 99, 80);
+            padding: 5px 10px;
+            border-radius: 15px ;
+        }
+            a:hover{
+                background-color: #777;
+               
+            }
+
+        .arredondamentos{
+            width: 300px;
+            height: 300px;
+            background-color: aquamarine;
+            margin: 25px;
+        padding: 25px;
+    border-radius: 25px;
+    float: left;
+}
+            
+        .arredondamentos1{
+            width: 300px;
+            height: 300px;
+            background-color: rgb(42, 99, 80);
+            margin: 25px;
+            padding: 25px;
+            box-sizing: border-box;
+            border-radius: 30px 30px 20px 0px;
+            float: left;
+            color: white;
+          
+
+        }
+    .caixa{
+        width: 80%;
+        border-radius: 25px;
+        background-color: aquamarine;
+        padding: 25px;
+        margin: 0 auto;
+    }
+    .caixa1{
+        width: 80%;
+        border-radius: 25px;
+       /* background-color:  rgb(42, 99, 80,);*/
+        background: linear-gradient(to left ,rgb(42,99,80),aqua);
+       
+        padding: 25px;
+        margin: 0 auto;
+        color: white;
+    }
+    .sombra{
+        text-shadow: -3px -5px rgb(10, 175, 187,0.5);
+        box-shadow: 20px 0px 30px 10px rgb(10, 175, 187,0.5);
+        
+    }
+    .sombra:hover{
+       
+        box-shadow: -20px 0px 30px 10px rgb(10, 175, 187,0.5);
+        
+    }
+    .preto{
+        background: black;
+        padding: 50px;
+    }/*animaçoes*/
+    @keyframes animacao-caixa{
+        from{
+            background: rgb(21, 8, 87);
+            top: 0;
+            left: 0;
+        }
+        to{
+            top: 0px;
+            left: 100px;
+            background: yellow;
+            border-radius: 150px;
+                   }
+   
+    }
+
+    .caixa3{
+       width: 300px;
+       height: 300px;
+       background-color: blue;
+       border-radius: 150px;
+       animation-name: animacao-caixa;
+       animation-duration: 5s;/*duracao da animação*/
+       animation-delay:3s ;/*tempo para iniciar*/
+       animation-iteration-count: 4;/*quanta vzs repitir*/
+       animation-direction: alternate;/*para ir e voltar a animação igual e temos o reverse*/
+       animation:animacao-caixa 5s 3s 4 alternate ;/*para usar tudo de um vez so*/
+      
+       position: relative;
+    }
+       .clear{
+             clear: both;   
+            }
+    /*transiçoes*/
+    .transicoes{
+        width: 300px;
+        height: 300px;
+        background: orange;
+    }
+    .transicoes:hover{
+        width: 100%;
+        
+        background: rgb(7, 78, 51);
+        /*transition: width 3s,background 3s ;*/
+        transition: all 8s;
+    }
+
+    </style>
+  
+</head>
+<body>
+    <h1>box-size e border radius</h1>
+    
+    <div class="arredondamentos">
+        <h3>arredondamentos e box-size</h3>
+        <p>o arrdondamentos como vimos são usados com o border radius e o box-size serve para dar o tamanha real sem que o padding aumente ele
+            ambos elementos estao usando o border radius tambem </p>
+
+    </div>
+    <div class="arredondamentos1">
+         <p>ambos estao com o mesmo padding porem esse de baixo esta com o box-size para que com um padding aplicado ele nao passeo tamanho original dele empurando o conteudo para dentro e nao para fora  </p>
+    </div>
+    <div class="clear"></div>
+    <hr>
+    <h1>normalize</h1>
+    <div class="caixa">
+        <p>utilize junto como arquivo css para ter melhor compatibilidade de navegadores usando ele como arquivo externo css link abaixo.</p>
+        <a href="https://necolas.github.io/normalize.css/">normalize site</a>
+
+    </div>
+    <hr>
+    <h1>degradês e tranparência</h1>
+    <div class="caixa1">
+        <h1>lorem</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, earum id aperiam inventore ut tenetur voluptatem laboriosam hic alias doloribus sed! Suscipit corporis, autem exercitationem deleniti neque veniam molestiae iste!</p>
+        <p>o quarto elemnto de um rgb  rgb(42, 99, 80,0.7) no caso o 0.7 e o que define a opacidade. </p>
+        <p>gradiente  background: linear-gradient(to left ,rgb(42,99,80),aqua) e no caso o que esta aplicado aqui</p>
+        <a href="https://www.w3schools.com/css/css3_gradients.asp">mais sobre </a>
+
+    </div>
+    <hr>
+    <div class="preto">
+            <div class="caixa sombra" >
+                <h1>lorem ipsum</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, ab. Obcaecati repellat quae quam dicta aliquid! Recusandae in adipisci possimus autem, similique eos cum veritatis, incidunt non nihil reiciendis repellendus.
+                </p>
+                <p>
+                    text-shadow: -3px -5px rgb(10, 175, 187,0.5); o primeiro e o segundo valor e de posicionamento e o ultimo e cor
+                
+                    
+                </p>
+                <p>  box-shadow: 20px 0px 30px 10px rgb(10, 175, 187,0.5); igual o text shadow porem serve para divs e o 3 valor e para um blur e o ultimo tamanho da sombra</p>
+
+            </div>
+    </div>
+    <hr>
+    <h1>animações</h1>
+    <div class="caixa3">
+      <p>lembresse de sempre usar os prefixos para navegadores</p>
+    </div>
+    <img style="width: 100%;" src="imagens/code.png" alt="">
+    <hr>
+    <h1>Transições</h1>
+    <div class="transicoes">
+
+    </div>
+    <img style="width: 100%" src="imagens/codet.png" alt="">
+    <hr>
+    <div class="caixa1">
+        <h1>novas tags html</h1>
+        <ul>
+            <p>em vez de usar divs eu poss usar as tags </p>
+            <li>header</li>
+            <li>nav</li>
+            <li>footer</li>
+            <h2>mais tags</h2>
+            <li>article-artigos</li>
+            <li>section</li>
+            <li>time-para datas</li>
+            <li>aside- ao lado lateral</li>
+            
+        </ul>
+
+    </div><hr>
+    <h1>compatibilidade</h1>
+    <div class="caixa">
+         <p>use o shiv para compatibilidade</p>
+    </div>
+    <hr>
+    <h1>tags novas de input</h1>
+    <div class="caixa">
+        <form action="">
+            <label for="nome">nome:</label>
+            <input type="text" id="nome"><br>
+            <label for="email">email:</label><!--email como input-->
+            <input type="email" id="email" required="required" autofocus><br><!--required para campo obrigatorio e o autofocus para campo que preencha primeiro-->
+            <label for="numeros">numero:</label>
+            <input type="number" id="numero" min="5" max="30" required step="5"><!--posso definir um min e max com o tipo number o step pula de 5 em 5 na flecha -->
+            <br><label for="url">url</label>
+            <input type="url" id="url" placeholder="sua url aqui">
+            <br><label for="pesquisa">pesquisa</label>
+             <input type="search" id="pesquisa">
+            <br><label for="range">range</label>
+             <input type="range" id="range" min="1" max="20" value="5" >
+            <br><label for="data">data</label>
+             <input type="date" id="data" >
+            <br><label for="color">data</label>
+             <input type="color" id="color" >
+
+             
+
+
+           <br> <input type="submit" value="enviar">
+        </form>
+          
+    </div>
+    <img width="100%" src="imagens/codein.png" alt="">
+    <hr>
+    <a href="index2.html">proxima pagina</a>
+   
+
+
+<br><br><br>
+<br><br><br>
+
+</body>
+</html>

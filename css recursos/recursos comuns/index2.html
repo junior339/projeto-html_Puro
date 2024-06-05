@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        h1{
+            text-align: center;
+        }
+        #conteudo{
+            background:#dcdcdc ;
+            height: 400px;
+           
+            display: flex;
+            flex-direction:row;/*row|row-reverse|column| column-reverse da a direcao dos filhos dentro dele*/
+            flex-wrap:nowrap;/*serve ´para dar uma quebra de linha caso o conteiner pai seja muito pequeno| nowrap |wrap |wrap-reverse*/
+            justify-content:center;/*flex-start|flex-end| center | space-between|space-around| ordena os filhos em posições na posição horizontal se o flex direction estiver row se nao ele alinhara na vertical*/
+            align-items: center;/*alinha na vertical|strech|center|flex-start|flex-end|baselinepela linha do texto*/
+        }
+        .item{
+            width: 100px;
+            height: 100px;
+            background: white;
+            border: 1px solid gray;
+            margin: 10px;
+
+        }
+        #conteudo1{
+            background:#dcdcdc ;
+            height: 400px;
+            display: flex;
+            flex-wrap: nowrap;
+       
+
+
+           }
+        .item1{
+            width: 200px;
+            height: 100px;
+            background: white;
+            border: 1px solid gray;
+            margin: 10px;
+            flex-grow:1 ;/*vai crescer meu conteudo ate o conteiner dele se for 1 ou ate 2 para o espaço que ele vai ocupar em relação aos outros*/
+
+        }  
+        .item2{
+            flex-shrink: 5;
+        }
+    
+        .ordem1{
+            order:1;
+        } 
+        .ordem2{
+            order:2;
+        } 
+        .ordem3{
+            order:3;
+        } 
+        .ordem4{
+            order:4;
+        } 
+        .ordem{
+            order: -1;
+        }
+    </style>
+</head>
+<body>
+    <h1>flexbox conteiner</h1>
+    <div id="conteudo">
+        <div class="item">01</div>
+        <div class="item">02</div>
+        <div class="item">03</div>
+        <div class="item">04</div>
+        <div class="item">01</div>
+  
+
+    </div>
+    <img width="100%"src="imagens/felxconteiner1.png" alt="">
+    <img width="100%"src="imagens/flexconteiner3.png" alt="">
+    <h1>flexbox itens</h1>
+    <div id="conteudo1">
+        <div class="item1 item2 ordem1">01</div>
+        <div class="item1 ordem2">02</div>
+        <div class="item1 ordem3">03</div>
+        <div class="item1 ordem4">04</div>
+       
+  
+
+    </div>
+    <img width="100%"src="imagens/flexitens1.png" alt="">
+    <p>o ordem e para ordenar a exibição das divs o o antagonista o flexgrow e o flex-shrink qua quanto maior o numero mais ele encolhe e tambem tem o flex-basis define o tamanho inicial dos items antes da distribuição</p>
+    <img width="100%"src="imagens/flexitens2.png" alt="">
+    <h1>prefixos</h1>
+    <a href="https://autoprefixer.github.io/">coloque a parte nesse site em css.</a>
+    
+    
+</body>
+</html>

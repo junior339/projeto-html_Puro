@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilizando formularios</title>
+    <style>
+        body{
+            font-family: 'Trebuchet MS',helvetica, sans-serif;
+        }
+        fieldset{
+            padding: 1em;
+            border: 1px solid #ccc;
+            background: #f8f8f8;
+            margin: 1em 0;
+        }
+        legend{
+            font-weight: bold;
+        }
+        label{
+           
+            display: block;
+            cursor: pointer;
+        }
+        input[type="text"]{
+            width: 20em;
+        }
+        textarea{
+            width: 20em;
+            height: 10em;
+        }
+      
+
+    </style>
+</head>
+<body>
+        <h2>Estilizando formularios </h2>
+        <form action="">
+            <fieldset>
+              <legend>Detalhes de contato</legend>  
+              
+                <div>
+                    <label for="nome">nome:</label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+              
+                <div>
+                    <label for="email">email:</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div>
+                    <label for="url">url:</label>
+                    <input type="text" name="url" id="url">
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Comentarios
+                </legend>
+                <div>
+                    <label for="mensagem">mensagem:</label>
+                    <textarea name="mensagem" id="mensagem"></textarea>
+                </div>
+
+            </fieldset>
+            <fieldset>
+            <legend>Lembrar de mim</legend>
+                <div >
+                  <label for="sim">
+                  <input type="radio" name="lembrar" id="sim">Sim
+                 </label>
+                    
+                </div>
+                <div >
+                  <label for="nao">
+                  <input type="radio" name="lembrar" id="nao">Não
+                 </label>
+                    
+                </div>
+               
+            </fieldset>
+            <input type="submit">
+        </form>
+
+
+    
+</body>
+</html>

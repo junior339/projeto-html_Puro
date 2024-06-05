@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>posicionamento static ,relative ,absolute e fixed</title>
+    <style>
+        body{
+
+            background:#007fc7 ;
+        }
+        #conteiner{
+            background: #fff;
+            width: 800px;
+            margin: 10px auto;
+            position: relative;
+            padding: 10px;
+        }
+        h1{
+            position: static;
+            margin-bottom: 65px;
+        }
+        p{
+           
+            width: 300px;
+        }
+        /*.relative{
+           border: 1px solid red;
+           position: relative;
+           left: 355px;
+           top: 55px;
+        }*/
+        .fixed{
+            position: fixed;
+            background-color: #fff;
+            border: 1px solid red;
+            right: 0;
+            bottom: 0;
+            margin:0px ;
+        }
+        .absolute{
+            position: absolute;
+            border: 1px solid red;
+            top: 0px;
+            right: 20px;
+            background-color: #fff;
+            
+        
+        }
+    </style>
+</head> 
+    <div id="conteiner">  
+         <h1>posicionamento</h1> 
+          <p >p1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos alias delectus est dolorem, tempore possimus harum, officia animi dignissimos cumque quae quam! Fuga doloremque illum facere repellendus eaque odit sed.</p>
+          <p class="fixed"> p2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos alias delectus est dolorem, tempore possimus harum, officia animi dignissimos cumque quae quam! Fuga doloremque illum facere repellendus eaque odit sed.</p>
+          <p> p3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos alias delectus est dolorem, tempore possimus harum, officia animi dignissimos cumque quae quam! Fuga doloremque illum facere repellendus eaque odit sed.</p>
+          <p> p3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos alias delectus est dolorem, tempore possimus harum, officia animi dignissimos cumque quae quam! Fuga doloremque illum facere repellendus eaque odit sed.</p>
+          <p> p3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos alias delectus est dolorem, tempore possimus harum, officia animi dignissimos cumque quae quam! Fuga doloremque illum facere repellendus eaque odit sed.</p>
+          <p> p3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos alias delectus est dolorem, tempore possimus harum, officia animi dignissimos cumque quae quam! Fuga doloremque illum facere repellendus eaque odit sed.</p>
+          <p> p3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos alias delectus est dolorem, tempore possimus harum, officia animi dignissimos cumque quae quam! Fuga doloremque illum facere repellendus eaque odit sed.</p>
+          <p>o static e o position padrao</p>
+          <p>o relative usa deslocamento top e etc... e ele fica relativo a sua posição original</p>
+          <p>o absolute ele sai do fluxo padrao e fica no mesmo lugar onde estava ele tem top e etc ..... e se eu der um top ou left por exemplo ele vai ficar relatico a o seu conteiner que tenha uma posição diferente de static que e a padrao se vc estiver em um div troque para relative para ficar em relação a div pai</p>
+          <p>o fixed fica fixo em relação a janela e sai do fluxo natural tem top e etc....</p>
+    </div>
+    
+</body>
+</html>

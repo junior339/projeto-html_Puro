@@ -17,14 +17,14 @@
 
     
     <h2>Alertas</h2>
-    <div>
+    <div class="alert alert-primary">
       <strong>Primary</strong> você tem uma postagem pendente!
     </div>
 
 
     <h2>Alerta com botão fechar</h2>
-    <div>
-      <button type="button">
+    <div class="alert alert-danger alert-dismissible">
+      <button class="close" type="button" data-dismiss="alert">
         &times;
       </button>
       <strong>Fechar</strong> Alerta com botão fechar
@@ -33,7 +33,7 @@
     
 
     <h2>Alerta com mais conteúdos</h2>
-    <div>
+    <div class="alert alert-info">
       
       <h4>Título</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a metus in purus malesuada vulputate. Sed lacinia quam massa, eu consectetur tortor faucibus sed.</p>
@@ -45,21 +45,46 @@
 
 
     <h2>Barra de progresso</h2>
-    <div>
-      <div></div>
+    <div class="progress ">
+      <div class="progress-bar w-25"> 25%</div>
+    </div>
+    <br>
+    <div class="progress ">
+      <div class="progress-bar bg-success w-50"> 50%</div>
     </div>
     <br>
 
     <h2>Altura</h2>
+    <div class="progress " style="height: 2px;">
+      <div class="progress-bar bg-danger w-50"> 50%</div>
+    </div>
+    <br>
+   
     
 
     <h2>Listrado</h2>
+    <div class="progress ">
+      <div class="progress-bar progress-bar-striped bg-info " style="width: 70%;"> 70%</div>
+    </div>
+    <br>
     
 
     <h2>Animado</h2>
+    <div class="progress ">
+      <div class="progress-bar progress-bar-striped progress-bar-animated bg-success " style="width: 70%;"> 70%</div>
+    </div>
+    <br>
+    
     
 
     <h2>Múltiplas barras</h2>
+   
+      <div class="progress ">
+        <div class="progress-bar progress-bar-striped bg-info progress-bar-animated " style="width: 20%;"> 20%</div>
+        <div class="progress-bar progress-bar-striped bg-danger  progress-bar-animated" style="width: 20%;"> 20%</div>
+        <div class="progress-bar progress-bar-striped bg-success  progress-bar-animated" style="width: 20%;"> 20%</div>
+      </div>
+    
     
 
     <!-- Optional JavaScript -->

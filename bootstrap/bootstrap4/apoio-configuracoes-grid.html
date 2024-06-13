@@ -10,26 +10,90 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+      .marcador{
+          background: #fe9d9d;
+          border: 1px solid #f94646;
+      }
+      .marcador-container{
+          background: #5bf946;
+          border: 1px solid #36ae26;
+      }
+  </style>
+  
 
   </head>
 
   <body>
 
-    <div>
+    <div class="container marcador-container"><!---fluid--> 
       
       <h2>Largura fixa</h2>
+      <div class="row">
+        <div class="marcador col ">area 1</div><!--col da uma largura fixa-->
+        <div class="marcador col ">area 2</div><!--col da uma largura fixa-->
+        <div class="marcador col ">area 3</div><!--col da uma largura fixa-->
+        <div class="marcador col ">area 4</div><!--col da uma largura fixa-->
+      </div>
 
       <h2>Largura automática (auto-layout)</h2>
+      <div class="row">
+        <div class="marcador col ">area 1</div>
+        <div class="marcador col-4 ">area 2</div>
+        <div class="marcador col-6 ">area 3</div>
+    
+      </div>
 
       <h2>Largura igual empilhada</h2>
+      <!--perceba que se eu colocar uma largura maxima tipo xl ele deixara tudo empilhado exemplo abaixo -->
+      <div class="container marcador-conteiner">
+           <div class="marcador col-md">item 1</div>
+           <div class="marcador col-md">item 2</div>
+           <div class="marcador col-md">item 3</div>
+           <div class="marcador col-md">se vc notar eu deixei uma largura fixa para todos os tamanhos de tela com o col-xl</div>
+           <div>porem se eu uso o col-md ele ira alinha lateral acima </div>
+      </div>
 
       <h2>Ordenando</h2>
+      <div class="row ">
+        <div class="marcador col-md-4 order-2">item 1</div>
+        <div class="marcador col-md-4 order-3">item 2</div>
+        <div class="marcador col-md-4 order-1">item 3</div>
+      </div>
+   <div class="marcador">para poder ordenar meus itens eu posso usa na minha div principal a propriedade order-1 ou 2 e etc nas divs filhas lembre de usar o rwo na div principal  </div>
 
       <h2>offset</h2>
+      <div class="row">
+        <div class="marcador col-md-6 offset-md-3">o offset é o espaçamento que é dadona frente da div offset-md-1 nesse caso </div>
+
+      </div>
 
       <h2>offset múltiplos alinhamentos</h2>
+           <div class="row">
+            <div class="marcador col-md-1 offset-md-1">item 1</div>
+            <div class="marcador col-md-2 offset-md-1">item 2</div>
+            <div class="marcador col-md-2 offset-md-1">item 3</div>
+            <div class="marcador col-md-2 offset-md-1">item 4</div>
+
+           </div>
 
       <h2>Aninhamento</h2>
+            <div class="row ">
+              <div class="marcador col-md-6 offset-md-3 " style="border-radius: 10px;">
+                  <div class="row "style=" border-radius: 10px;">
+                    <div class="marcador bg-warning col-md-4" style=" border-radius: 10px;">col-md-4</div>
+                    <div class="marcador bg-warning col-md-4 offset-md-4" style=" border-radius: 10px;">col-md-4 offset-4</div>
+
+                  </div>
+                  <div class="row">
+                    <div class="marcador col-md-12 ">
+                         cada row define uma divisão de 12 e eu posso aninhalas uma dentro da outra
+                    </div>
+
+                  </div>
+              </div>
+
+            </div>
 
     </div>
 

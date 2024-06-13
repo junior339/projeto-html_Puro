@@ -1,0 +1,32 @@
+#home {
+	background: #ffc107;
+	color: white;
+}
+.color{
+	background: #ffc107;
+}
+
+/*
+@media screen and (max-width: 800px ) and (min-width:700px){
+	#home {
+	  background:#ffffff;
+	}
+  }
+
+@media screen and (max-width: 600px ) and (min-width:0px){
+	#home {
+	  background:#5f2828;
+	}
+  }
+maneira mais efetiva de usar a responsividade para aplicativos 
+*/
+.caixa{
+	padding: 60px 0;
+}
+footer p a{
+	margin: 5px 15px;
+	text-decoration: none;
+}
+espaaco div a{
+	margin-left: 65px;
+}
